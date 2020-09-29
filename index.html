@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>NSS of Fr.CRCE</title>
+    <link rel = "icon" href = "logo1.png"  type = "image/x-icon">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--  <link rel="stylesheet" href="bootstrap-4.3.1-dist\css\bootstrap.min.css">   -->
+   <!-- <link rel="stylesheet" href="fixed.css">  -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+    .lead{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 300;
+     font-size: 1.3rem;
+    }
+
+    .aboutus{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3rem;
+      font-weight: 450;
+    }
+   
+   /*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+
+}
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100% ;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo|IBM+Plex+Sans|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.lead{
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 325;
+ font-size: 1.3em;
+ /* letter-spacing: 0em; */
+}
+
+.lead-big{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 1.9em;
+ }
+
+.aboutus{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  font-weight: 450;
+}
+
+.service-head{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+body{
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  /* background:rgba(133, 168, 170, 0.3); */
+  /* background: #e7eff6 !important; */
+  background: rgba(245, 248, 253, 1)!important;
+}
+
+.card{
+  background: rgba(245, 248, 253, 1)!important;
+}
+
+.btn-outline-secondary{
+  background-color: #4b86b4;
+  color: white;
+  /* text-shadow: 2px 2px 2px black; */
+  box-shadow: 2px 2px 8px black;
+}
+
+.btn-primary{
+  background-color: #4b86b4;
+  color: white;
+  /* text-shadow: 2px 2px 2px black; */
+  box-shadow: 2px 2px 8px #2A4D69;
+  /* border: 1.5px solid #2A4D69; */
+}
+
+.event-image{
+  border: 3px solid #2A4D69;
+}
+
+.social-cs-insta{
+  color: #cd486b;
+}
+
+.social-cs-facebook{
+  color: #00308f!important;
+}
+
+/* .parallax {
+
+  background-image: url("img/white_wall.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* navbar */
+.navbar{
+  text-transform: uppercase;
+  /* background: rgba(4, 19, 58, 0.7)!important; */
+  background-color: green;
+  /* background-color: #002626!important;  */
+  /* background-color: #3d8f7b!important; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0rem;
+  padding: .8rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+/* h1.aboutus{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+} */
+
+.navbar-dark .navbar-nav .nav-link{
+  padding-right: 1.4rem;
+}
+
+/* hover nav buttons */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #eee;
+  text-shadow: 0rem 0rem 8rem black;
+}
+
+.college-link:hover{
+  color: #d8ab08;
+}
+
+.dropdown-menu{
+  background-color: #342d70;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover{
+  background-color: #342d70;
+  color: white;
+  text-shadow: 0rem 0rem 8rem black;
+  font-weight: bold;
+}
+
+/* navbar */
+
+
+/* team */
+
+
+.hr-dark{
+  border-top: 4px solid #2A4D69;
+  width: 90%;
+  margin-top: .8rem;
+  margin-bottom: 1.7rem;
+}
+/* team */
+
+
+/* background img */
+.home-inner{
+    position: relative;
+    /* margin-top: 50px; */
+    background-image: url(nsscover.jpg);
+}
+
+.caption1{
+
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 46%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.2rem 0.2rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3{
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.1rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  text-shadow: 0.1rem 0.1rem 0.6rem black;
+  box-shadow: 0.2rem 0.2rem 0.8rem black;
+}
+/*
+ .welcome{
+  background: #d5dced;
+  color: black;
+  width: 100%;
+  position:absolute;
+  left:0;
+  right:0;
+}
+*/
+
+.welcome{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: black;
+  left: 0;
+  right: 0;
+}
+
+/* .fa-instagram{
+  color: #517fa4;
+}
+
+.fa-instagram:hover{
+  color: #d5d5d5;
+} */
+
+/* background image */
+
+
+
+/* community service */
+  .hr-break{
+      height: 12px;
+      border: 0;
+      /* box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); */
+      padding-bottom: 5rem;
+    }
+
+    .hr-underline{
+      border-top: 2px solid #2A4D69;
+      width: 65%;
+      margin-top: .8rem;
+      margin-bottom: 1rem;
+   }
+
+   .service-title{
+     width: 70%;
+     font-size: 2rem;
+     background-color: rgba(42, 77, 105, 1)!important;
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 500;
+     border: 1.5px solid #4b86b4;
+     border-radius:17px;
+     margin-bottom:1.4rem;
+     /* margin-left: 60px; */
+     /* margin-right: 60px; */
+     /* box-shadow: 5px 3px 2px grey; */
+     text-shadow: 0.1rem 0.1rem 0.3rem black;
+     padding: 1rem;
+   }
+
+   .service-content{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 300;
+     font-size: 1.25rem;
+   }
+/* community service */
+
+.trapezoid {
+  border-top: 50px solid blue;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+
+}
+
+
+
+/* contact */
+footer{
+  /* background-color: #424c66; */
+  /* background-color: #364c59; */
+  background-color: #007bff;
+  /* background-color: #002626!important;  */
+  /* #2A4D69 */
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+footer a{
+  color: #d5d5d5;
+}
+
+.contact-name{
+  font-size: 1.5rem;
+}
+
+.contact-number{
+  font-size: 1.2rem;
+}
+
+hr.light{
+  border-top: 2px solid #d8ab08;
+  width: 55%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+hr.light-100{
+  border-top: 2px solid #d8ab08;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+#footer { 
+            position: fixed; 
+            padding: 10px 10px 0px 10px; 
+            bottom: 0; 
+            width: 100%; 
+            /* Height of the footer*/  
+           
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* contact */
+.cover1{
+  margin-top: 65px;
+  background-image: url("Wallpaper1.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 900px;
+  width: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+
+}
+
+.bg1{
+  background-color: #ece5dd !important;
+}
+
+@media only screen and (max-width: 767px)
+.what-nss-about p {
+    font-size: 13px;
+}
+
+
+
+
+.line { 
+              
+            /* Increase this as per requirement */ 
+            padding-bottom: 15px; 
+            border-bottom-style: solid ; 
+            border-bottom-width: 3.1px ; 
+            width: fit-content; 
+        } 
+
+
+
+
+@mixin white-gradient {
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+
+slide11 {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: auto;
+  overflow:hidden;
+  position: relative;
+  width: 960px;
+  
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+
+
+
+
+  </style>
+
+  <body style="background-color: #eaeaf0">
+
+   <div style="" class="header">
+      <nav style="background-color:#342d70;" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo1.png" width="50px" height="50px"><img style="padding-left: 25px" src="HEADER_LOGO.png" width="190px " height="auto"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+                 <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Events
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="College.html">College</a>
+                    <a class="dropdown-item" href="Outdoor.html">Outdoor</a>
+                    <a class="dropdown-item" href="University.html">University</a>
+                  </div>
+               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="camp 1.html">Camp</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="noticenew.html">Notices</a>
+              </li>
+              
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+   <div class="" style="padding-top: 70px">
+   <img src="Wallpaper1.jpg" class="img-fluid" style="width: 100%;height: auto;" alt="Responsive image">
+  </div>
+
+
+
+
+    <!-- about -->
+    <div style="background-color: #eaeaf0">
+    <div class="container-fluid">
+      <div class="row welcome text-center">
+        <div class="col-12">
+        <h1  style="color: #342d70" class="aboutus">ABOUT US</h1> 
+               <hr style="height: 1px;background-color: #342d70;width:50%  "> 
+
+
+        </div>
+        <div class="col-12">
+          <p class="lead-big"><q>NOT ME BUT YOU</q></p>
+          <p class="lead what-nss-about">The National Service Scheme (NSS) has been enthusiastically conducting activities to help people from the past 50 years. It was launched on Gandhiji’s centenary year to continue his ideas of community service among the youth of our nation. NSS is a student association of the youth studying in university.
+We National Service Scheme Unit of Fr. Conceicao Rodrigues College of Engineering, Bandra, Mumbai. With our team of 100 volunteers carry out our social responsibility by organizing and attending various events like Beach cleanups, Tree plantations, Crowd management, Awareness rallies and many more. NSS-CRCE has adopted a village for the period of 5 years at Tandulwadi, Saphale, Maharashtra.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end about -->
+
+
+<div style="background-color: #342d70;color: white">
+
+
+
+<div  style="background-color: #eaeaf0; ">
+<div class="container-fluid" style="background-color:#eaeaf0 " id="carouselExampleSlidesOnly" class="carousel slide container" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="1.jpg.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="2.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="NSS1.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div style="padding-top: 30px;padding-bottom: 30px">
+<div class="aboutus" style="text-align: center;padding-top:10px;">2019 at a Glance</div>
+       <hr style="height: 1px;background-color: #eaeaf0;width:33%  ">
+
+
+<div class="container" style="text-align: center; padding-top: 10px;padding-bottom: 10px;">
+  <div class="row">
+    <div class="col-sm">
+     <span class="aboutus" style="font-size: 44px;"> 5840+</span><br><span style="font-size: 30px;" class="aboutus">Volunteer hours of service</span>
+    </div>
+    <div class="col-sm">
+     <span class="aboutus" style="font-size: 44px;"> 31</span><br><span class="aboutus" style="font-size: 30px">Events</span>
+    </div>
+    <div class="col-sm">
+     <span class="aboutus" style="font-size: 44px;">2</span><br><span class="aboutus" style="font-size: 30px">Blood Donation camps</span>
+    </div>
+    <div class="col-sm">
+     <span class="aboutus" style="font-size: 44px;">7</span><br><span class="aboutus" style="font-size: 30px">Beach cleanups</span>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<div style="background-color: #eaeaf0;padding-top: 30px;padding-bottom: 30px">
+<center>
+<div class="container">
+ <div class="line"> <h2 id="line" class="aboutus" style="color:#342d70;">Our Event Partners</h2></div>
+       <hr style="height: 1px;background-color: #342d70;width:50%  ">
+
+
+
+
+<div style="height: 300px;width: 300px" id="carouselExampleCaptions" class="carousel slide container" data-ride="carousel" data-interval="3000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+
+
+
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="ASBB NGO.png"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Bislari.jpg"; class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="chaitanya Foundation.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+       <div class="carousel-item">
+      <img src="Holy family hospital.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="Mumbai Police.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="Mumbai University.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="Tata memorable hospital.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="The turning tide.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="United Way mumbai.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+           <div class="carousel-item">
+      <img src="Walk for freedom.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+      </div>
+    </div>
+
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+</center>
+</div>
+
+
+</div>
+   
+
+     <!--   <hr class="hr-dark">-->
+
+<!--contact us-->
+<div style="background-color: #342d70; color:white;padding-bottom: 50px;padding-top: 30px" class="container-fluid">
+  <h2 class="aboutus" style="text-align: center; padding-top: 0px;font-size:48px;font-weight: 400">CONTACT US</h2>
+<hr style="height: 1px;background-color: #eaeaf0;width:26% ">
+
+<div style="padding-top: 40px background-color:#342d70 color:white" class="container-fluid">
+  <div class="row">
+    <div style="padding-top: 14px" class="col-lg-4 col-sm-12">
+   <center>   <a style="" href="#"><img src="logo1.png" width="150px" height="auto"#></a></center><br><br>
+      <center><h5 class="" style="padding-bottom: 10px; font-family: 'Quicksand', sans-serif; font-size: 2.1rem; font-weight: 450;">National Service Scheme</h5></center>
+      <center>
+        <a style="padding-left: 7px;" href="https://www.facebook.com/NssCrce/"><img src="facebook.svg" height="32px"></a>
+        <a  style="padding-left: 7px;" href="https://instagram.com/nss.crce?igshid=6sez4x1cdfza"><img src="instagram.svg" height="32px"></a>
+        <a  style="padding-left: 7px;" href="https://twitter.com/NCrce?s=09"><img src="twitter.svg" height="32px"></a>
+        <a  style="padding-left: 7px;" href="https://www.youtube.com/channel/UCapmNAV8uTIv_W3tj8rdJSQ"><img src="youtube.svg" height="32px"></a>
+        <a  style="padding-left: 7px;" href="mailto:crce.nss@gmail.com"><img src="gmail.svg" height="32px"></a>
+        <a  style="padding-left: 7px;" href="https://www.linkedin.com/in/nss-crce-0a44951b0/"><img src="linkedin.svg" height="32px"></a>
+
+
+
+      </center>
+    </div>
+     
+     <div style="padding-top: 50px" class="col-lg-4 col-sm-12">
+    <center>  <h3 style="padding-bottom: ">President : Gaurav Sable </h3></center>
+     <!-- <center><h4  style="">Gaurav Sable</h4></center>   -->
+    <center><h3 style="padding-bottom: 20px"> <p><img src="phone-16.png" height="26px"> <span></span>  <a style="color: white; " href="tel:9082638471"> : 9082638471</a></p></h3></center>
+     <hr  style="height: 1px;background-color: #eaeaf0; ">
+     <center> <h3 style="padding-top: 20px">Treasurer : Atharva Belnekar </h3></center>
+    <!--  <center><h4>Atharva Belnekar</h4></center>  -->
+    <center><h3> <p><img src="phone-16.png" height="26px"><a style="color: white;" href="tel:8850465134"> : 8850465134</a></p></h3></center>
+    </div>
+    <div style="padding-top: 40px" class="col-lg-4 col-sm-12">
+     <center > <a  style="padding-bottom: 70px" href=""><img src="HEADER_LOGO.png" height="100px" width="auto"></a></center><br><br>
+     <center><a class="aboutus" style="color: white;padding-top: 70px;" href="http://www.frcrce.ac.in/"> <h3>Fr. Conceicao Rodrigues College Of Enginnering</h3></a></center>
+      
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+       <h5 style="text-align: center;font-style: italic;color: #342d70;padding-bottom: 5px;padding-top: 5px";>Designed by Mahesh Babar and Rahul Pujari</h5>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
