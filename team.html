@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+
+    <style type="text/css">
+      
+  .upper-fixed{
+    position: fixed;
+    bottom : 100%;
+   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+/*
+nav{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: green;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background-color: transparent;
+  transition: .5s;
+
+}
+*/
+
+
+  @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+    .lead{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 300;
+     font-size: 1.3rem;
+    }
+
+    .aboutus{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3rem;
+      font-weight: 450;
+    }
+   
+   /*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+/* .row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+} */
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100% ;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo|IBM+Plex+Sans|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.lead{
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 325;
+ font-size: 1.3em;
+ /* letter-spacing: 0em; */
+}
+
+.lead-big{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 1.9em;
+ }
+
+.aboutus{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  font-weight: 450;
+}
+
+.service-head{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+body{
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  /* background:rgba(133, 168, 170, 0.3); */
+  /* background: #e7eff6 !important; */
+  background: rgba(245, 248, 253, 1)!important;
+}
+
+.card{
+  background: rgba(245, 248, 253, 1)!important;
+}
+
+.btn-outline-secondary{
+  background-color: #4b86b4;
+  color: white;
+  /* text-shadow: 2px 2px 2px black; */
+  box-shadow: 2px 2px 8px black;
+}
+
+.btn-primary{
+  background-color: #4b86b4;
+  color: white;
+  /* text-shadow: 2px 2px 2px black; */
+  box-shadow: 2px 2px 8px #2A4D69;
+  /* border: 1.5px solid #2A4D69; */
+}
+
+.event-image{
+  border: 3px solid #2A4D69;
+}
+
+.social-cs-insta{
+  color: #cd486b;
+}
+
+.social-cs-facebook{
+  color: #00308f!important;
+}
+
+/* .parallax {
+
+  background-image: url("img/white_wall.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* navbar */
+.navbar{
+  text-transform: uppercase;
+  /* background: rgba(4, 19, 58, 0.7)!important; */
+  background-color: green;
+  /* background-color: #002626!important;  */
+  /* background-color: #3d8f7b!important; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0rem;
+  padding: .8rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+
+/* h1.aboutus{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+} */
+
+.navbar-dark .navbar-nav .nav-link{
+  padding-right: 1.4rem;
+}
+
+/* hover nav buttons */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #eee;
+  text-shadow: 0rem 0rem 8rem black;
+}
+
+.college-link:hover{
+  color: #d8ab08;
+}
+
+.dropdown-menu{
+  background-color: #342d70;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover{
+  background-color: #342d70;
+  color: white;
+  text-shadow: 0rem 0rem 8rem black;
+  font-weight: bold;
+}
+
+/* navbar */
+
+
+/* team */
+.rounded-circle{
+  padding: 0px;
+  border: 3px solid #2A4D69;
+}
+
+.team-post{
+  font-family: 'Archivo', sans-serif;
+  /* color:#2A4D69; */
+  /* font-family: 'Cardo', serif; */
+  font-weight: 500;
+  /* font-size: 1.4rem; */
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-ipp{
+    width:300px;
+    height:300px;
+  }
+  
+  h1.display-4{
+    /* font-family: 'Archivo', sans-serif; */
+    /* font-family: 'Cardo', serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size:2.2em;
+  }
+  
+}
+
+.team-name{
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Judson', serif; */
+  /* font-family: 'Oswald', sans-serif; */
+  font-weight: 350;
+}
+
+h1.display-4{
+  /* font-family: 'Archivo', sans-serif; */
+  /* font-family: 'Cardo', serif; */
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
+.hr-dark{
+  border-top: 4px solid #2A4D69;
+  width: 63%;
+  margin-top: .8rem;
+  margin-bottom: 1.7rem;
+}
+/* team */
+
+
+/* background img */
+.home-inner{
+    position: relative;
+    /* margin-top: 50px; */
+    background-image: url(images/nsscover.jpg);
+}
+
+.caption1{
+
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 46%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.2rem 0.2rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3{
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.1rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  text-shadow: 0.1rem 0.1rem 0.6rem black;
+  box-shadow: 0.2rem 0.2rem 0.8rem black;
+}
+
+/* .welcome{
+  background: #d5dced;
+  color: black;
+  width: 100%;
+  position:absolute;
+  left:0;
+  right:0;
+} */
+
+.welcome{
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: black;
+  left: 0;
+  right: 0;
+}
+
+/* .fa-instagram{
+  color: #517fa4;
+}
+
+.fa-instagram:hover{
+  color: #d5d5d5;
+} */
+
+/* background image */
+
+
+
+/* community service */
+  .hr-break{
+      height: 12px;
+      border: 0;
+      /* box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); */
+      padding-bottom: 5rem;
+    }
+
+    .hr-underline{
+      border-top: 2px solid #2A4D69;
+      width: 65%;
+      margin-top: .8rem;
+      margin-bottom: 1rem;
+   }
+
+   .service-title{
+     width: 70%;
+     font-size: 2rem;
+     background-color: rgba(42, 77, 105, 1)!important;
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 500;
+     border: 1.5px solid #4b86b4;
+     border-radius:17px;
+     margin-bottom:1.4rem;
+     /* margin-left: 60px; */
+     /* margin-right: 60px; */
+     /* box-shadow: 5px 3px 2px grey; */
+     text-shadow: 0.1rem 0.1rem 0.3rem black;
+     padding: 1rem;
+   }
+
+   .service-content{
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 300;
+     font-size: 1.25rem;
+   }
+/* community service */
+
+
+/* contact */
+footer{
+  /* background-color: #424c66; */
+  /* background-color: #364c59; */
+  background-color: #007bff;
+  /* background-color: #002626!important;  */
+  /* #2A4D69 */
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+footer a{
+  color: #d5d5d5;
+}
+
+.contact-name{
+  font-size: 1.5rem;
+}
+
+.contact-number{
+  font-size: 1.2rem;
+}
+
+hr.light{
+  border-top: 2px solid #d8ab08;
+  width: 55%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+hr.light-100{
+  border-top: 2px solid #d8ab08;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+.social a{
+  font-size: 3em;
+  padding: 1rem;
+}
+
+.fa-instagram:hover{
+  color: #d8ab08;
+}
+
+.fa-facebook:hover{
+  color: #d8ab08;
+}
+
+/* contact */
+.cover1{
+  margin-top: 65px;
+  background-image: url("images/nsscover.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+
+}
+
+
+
+.line { 
+              
+            /* Increase this as per requirement */ 
+            padding-bottom: 15px; 
+            border-bottom-style: solid; 
+            border-bottom-width: 2.5px; 
+            width: fit-content; 
+            color: : #342d70;
+        } 
+
+
+
+
+    </style>
+
+    <title>TEAM MEMBERS</title>
+  </head>
+  <body>
+   <div style="background-color: #eaeaf0">
+   <div style="" class="header">
+      <nav style="background-color:#342d70;" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo1.png" width="50px" height="50px"><img style="padding-left: 25px" src="images/HEADER_LOGO.png" width="190px " height="auto"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+                 <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Events
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="College.html">College</a>
+                    <a class="dropdown-item" href="Outdoor.html">Outdoor</a>
+                    <a class="dropdown-item" href="University.html">University</a>
+                  </div>
+               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="camp.htm">Camp</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="noticenew.html">Notices</a>
+              </li>
+              <!-- <li class="nav-item active">
+                <a class="nav-link" href="sponsors.html">Sponsors</a>
+              </li> -->
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End navigation bar 
+<!--navbar-
+<nav>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bar"></i>
+    </label>
+    <label style="padding-top: 10px"  class="logo"><a href="index.html"><img src="images/logo1.png" height="50px" width="auto "  ></a></label>
+      <ul>
+        <li><a  href="index.html">HOME</a></li>
+        <li><a class="active" href="index.html">OUR MEMBER</a></li>
+        <li><a href="index.html">EVENT</a></li>
+        <li><a href="index.html">CAMP</a></li>
+        <li><a href="index.html">GALLERY</a></li>
+
+      </ul>
+  </div>
+</nav>
+
+-->
+
+
+<!-- Header -->
+
+
+
+<section id="team">
+     <div class="py-5 text-center text-info background-info" style="">
+    <div class="container">
+
+      <div class="container" style="padding-top: 50px">
+  <div class="row">
+    <div class="col">
+      <center><u><h1></h1></u></center>
+    </div>
+  </div>
+  
+</div>
+        
+        <div style="color: black" class="row">
+            <div class="col-lg-12 col-md-12 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/Gaurav.jpg">
+                <h4> <b>GAURAV SABLE</b> </h4>
+              <b>  <p  class="mb-0">PRESIDENT</p></b>
+            </div>
+        </div>
+
+
+
+     <center>   <h2 class="line" style="color: #342d70;">PUBLIC RELATION TEAM</h2>  </center>
+
+         <div style="color: black" class="row">
+            <div class="col-lg-3 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/Asiayal.jpg">
+                <h4> <b>ASIAYAL RODRIGUES</b> </h4>
+             <b>   <p class="mb-0">MEDIA HEAD</p></b>
+            </div>
+             <div class="col-lg-3 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/rahul.jpeg">
+                <h4> <b>RAHUL PUJARI</b> </h4>
+             <b>   <p class="mb-0">JOINT WEBMASTER</p></b>
+            </div>
+            <div class="col-lg-3 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/Mahesh.jpg" alt="Card image cap" width="200">
+                <h4> <b>MAHESH BABAR</b> </h4>
+              <b>  <p class="mb-0">JOINT WEBMASTER</p></b>
+            </div>
+            <div class="col-lg-3 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/Vineet.jpg" width="200">
+                <h4> <b>VINEET SOLANKI</b> </h4>
+             <b>   <p class="mb-0">DESIGN HEAD</p></b>
+            </div>
+        </div>
+   <center> <h2 class="line" style="color: #342d70;">DOCUMENTATION TEAM</h2>  </center>
+      <!--     <hr style="height: 1px;background-color: #342d70;width:40%  ">  -->
+
+
+        <div style="color: black" class="row">
+            <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/Atharva.jpg">
+                <h4> <b>ATHARVA BELENKAR</b> </h4>
+              <b>  <p class="mb-0">TREASURER</p></b>
+            </div>
+            <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/Swijel.jpg" alt="Card image cap" width="200">
+                <h4> <b>SWIJEL D'MELLO</b> </h4>
+               <b> <p class="mb-0">SECRETARY</p></b>
+            </div>
+            <div class="col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/Gayatri.jpg" width="200">
+                <h4> <b>GAYATRI VERMA</b> </h4>
+               <b> <p class="mb-0">DOCUMENTATION HEAD</p></b>
+            </div>
+        </div>
+
+     <center>   <h2 class="line" style="color: #342d70">ORGANIZATION TEAM</h2>  </center>
+
+       
+        <div class="row">
+            <div class="col-lg-6 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/Trisha.jpg">
+                <h4 style="color: black"> <b>TRISHA SINGH</b> </h4>
+              <b>  <p style="color: black" class="mb-0">EVENT CO-ORDINATOR</p></b>
+            </div>
+            <div class="col-lg-6 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/Dilton.jpg" alt="Card image cap" width="200">
+                <h4 style="color: black"> <b>DILTON DSOUZA</b> </h4>
+             <b>   <p style="color: black" class="mb-0">EVENT CO-ORDINATOR</p> </b>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Page Content -->
+
+    <!-- Team Member 3 -->
+   
+    <!-- Team Member 4 -->
+   
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
