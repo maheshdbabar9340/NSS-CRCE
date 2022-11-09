@@ -29,565 +29,496 @@
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
-    .lead{
-     font-family: 'Quicksand', sans-serif;
-     font-weight: 300;
-     font-size: 1.3rem;
+        .lead{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 1.3rem;
+        }
+        .Image{
+          width:100%;
+          height: 100%;
+        }
+
+        .style-two {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #342d70, rgba(0, 0, 0, 0));
+      
+        }
+        .style-three {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0),#eaeaf0, rgba(0, 0, 0, 0));
+      
+        }
+        .aboutus{
+          font-family: 'Quicksand', sans-serif;
+          font-size: 3rem;
+          font-weight: 450;
+        }
+      
+      /*--- Extra Bootstrap Column Padding --*/
+    [class*="col-"] {
+      padding: 1rem;
+
     }
-    .Image{
-      width:100%;
-      height: 100%;
+    .fixed-top  {
+    -webkit-backface-visibility: hidden;
     }
 
-    .style-two {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #342d70, rgba(0, 0, 0, 0));
-   
+    /*--- Fixed Landing Page Section --*/
+    .landing {
+      position: relative; 
+      width: 100%;
+      height: 100vh;
+      display: table;
+      z-index: -1;
     }
-    .style-three {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),#eaeaf0, rgba(0, 0, 0, 0));
-   
+    .home-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height:100% ;
     }
+    .home-inner {
+      position: fixed;
+      display: table;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      will-change: transform;
+    }
+
+    /*--- iOS Fixed Background Image --*/
+    .fixed-background {
+      position: relative;
+      width: 100%;
+    }
+    .fixed-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -999!important;
+    }
+    .fixed {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      will-change: transform;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Archivo|IBM+Plex+Sans|Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+    .lead{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 325;
+    font-size: 1.3em;
+    /* letter-spacing: 0em; */
+    }
+
+    .lead-big{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: 1.9em;
+    }
+
     .aboutus{
       font-family: 'Quicksand', sans-serif;
-      font-size: 3rem;
+      font-size: 3em;
       font-weight: 450;
     }
-   
-   /*--- Extra Bootstrap Column Padding --*/
-[class*="col-"] {
-  padding: 1rem;
 
-}
-.fixed-top  {
- -webkit-backface-visibility: hidden;
-}
-
-/*--- Fixed Landing Page Section --*/
-.landing {
-  position: relative; 
-  width: 100%;
-  height: 100vh;
-  display: table;
-  z-index: -1;
-}
-.home-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:100% ;
-}
-.home-inner {
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-
-/*--- iOS Fixed Background Image --*/
-.fixed-background {
-  position: relative;
-  width: 100%;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -999!important;
-}
-.fixed {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Archivo|IBM+Plex+Sans|Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-.lead{
- font-family: 'Quicksand', sans-serif;
- font-weight: 325;
- font-size: 1.3em;
- /* letter-spacing: 0em; */
-}
-
-.lead-big{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-  font-size: 1.9em;
- }
-
-.aboutus{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 3em;
-  font-weight: 450;
-}
-
-.service-head{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2rem;
-  font-weight: 450;
-}
-
-body{
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  /* background:rgba(133, 168, 170, 0.3); */
-  /* background: #e7eff6 !important; */
-  background: rgba(245, 248, 253, 1)!important;
-}
-
-.card{
-  background: rgba(245, 248, 253, 1)!important;
-}
-
-.btn-outline-secondary{
-  background-color: #4b86b4;
-  color: white;
-  /* text-shadow: 2px 2px 2px black; */
-  box-shadow: 2px 2px 8px black;
-}
-
-.btn-primary{
-  background-color: #4b86b4;
-  color: white;
-  /* text-shadow: 2px 2px 2px black; */
-  box-shadow: 2px 2px 8px #2A4D69;
-  /* border: 1.5px solid #2A4D69; */
-}
-
-.event-image{
-  border: 3px solid #2A4D69;
-}
-
-.social-cs-insta{
-  color: #cd486b;
-}
-
-.social-cs-facebook{
-  color: #00308f!important;
-}
-
-
-
-/* .parallax {
-
-  background-image: url("img/white_wall.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* navbar */
-.navbar{
-  text-transform: uppercase;
-  /* background: rgba(4, 19, 58, 0.7)!important; */
-  background-color: green;
-  /* background-color: #002626!important;  */
-  /* background-color: #3d8f7b!important; */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0rem;
-  padding: .8rem;
-  text-shadow: 0.1rem 0.1rem 0.3rem black;
-}
-
-/* h1.aboutus{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-} */
-
-.navbar-dark .navbar-nav .nav-link{
-  padding-right: 1.4rem;
-}
-
-/* hover nav buttons */
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
-  color: #eee;
-  text-shadow: 0rem 0rem 8rem black;
-}
-
-.college-link:hover{
-  color: #d8ab08;
-}
-
-.dropdown-menu{
-  background-color: #342d70;
-}
-
-.dropdown-item{
-  color: white;
-}
-
-.dropdown-menu .dropdown-item:hover{
-  background-color: #342d70;
-  color: white;
-  text-shadow: 0rem 0rem 8rem black;
-  font-weight: bold;
-}
-
-/* navbar */
-
-
-/* team */
-
-
-.hr-dark{
-  border-top: 4px solid #2A4D69;
-  width: 90%;
-  margin-top: .8rem;
-  margin-bottom: 1.7rem;
-}
-/* team */
-
-
-/* background img */
-.home-inner{
-    position: relative;
-    /* margin-top: 50px; */
-    background-image: url(images/nsscover.jpg);
-}
-
-.caption1{
-
-}
-
-.caption{
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 46%;
-  z-index: 1;
-  color: white;
-  text-transform: uppercase;
-}
-
-.caption h1{
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  text-shadow: 0.2rem 0.2rem 0.8rem black;
-  padding-bottom: 1rem;
-}
-
-.caption h3{
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem black;
-  padding-bottom: 1.1rem;
-}
-
-.btn-lg{
-  border-width: medium;
-  padding: 0.6rem 1.3rem;
-  font-size: 1.1rem;
-  text-shadow: 0.1rem 0.1rem 0.6rem black;
-  box-shadow: 0.2rem 0.2rem 0.8rem black;
-}
-/*
- .welcome{
-  background: #d5dced;
-  color: black;
-  width: 100%;
-  position:absolute;
-  left:0;
-  right:0;
-}
-*/
-
-.welcome{
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2rem;
-  color: black;
-  left: 0;
-  right: 0;
-}
-
-/* .fa-instagram{
-  color: #517fa4;
-}
-
-.fa-instagram:hover{
-  color: #d5d5d5;
-} */
-
-/* background image */
-
-
-
-/* community service */
-  .hr-break{
-      height: 12px;
-      border: 0;
-      /* box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); */
-      padding-bottom: 5rem;
+    .service-head{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 2rem;
+      font-weight: 450;
     }
 
-    .hr-underline{
-      border-top: 2px solid #2A4D69;
-      width: 65%;
+    body{
+      overflow-x: hidden;
+      height: 100%;
+      width: 100%;
+      /* background:rgba(133, 168, 170, 0.3); */
+      /* background: #e7eff6 !important; */
+      background: rgba(245, 248, 253, 1)!important;
+    }
+
+    .card{
+      background: rgba(245, 248, 253, 1)!important;
+    }
+
+    .btn-outline-secondary{
+      background-color: #4b86b4;
+      color: white;
+      /* text-shadow: 2px 2px 2px black; */
+      box-shadow: 2px 2px 8px black;
+    }
+
+    .btn-primary{
+      background-color: #4b86b4;
+      color: white;
+      /* text-shadow: 2px 2px 2px black; */
+      box-shadow: 2px 2px 8px #2A4D69;
+      /* border: 1.5px solid #2A4D69; */
+    }
+
+    .event-image{
+      border: 3px solid #2A4D69;
+    }
+
+    .social-cs-insta{
+      color: #cd486b;
+    }
+
+    .social-cs-facebook{
+      color: #00308f!important;
+    }
+
+    /* navbar */
+    .navbar{
+      text-transform: uppercase;
+      /* background: rgba(4, 19, 58, 0.7)!important; */
+      background-color: green;
+      /* background-color: #002626!important;  */
+      /* background-color: #3d8f7b!important; */
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: 0rem;
+      padding: .8rem;
+      text-shadow: 0.1rem 0.1rem 0.3rem black;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+      padding-right: 1.4rem;
+    }
+
+    /* hover nav buttons */
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link:hover{
+      color: #eee;
+      text-shadow: 0rem 0rem 8rem black;
+    }
+
+    .college-link:hover{
+      color: #d8ab08;
+    }
+
+    .dropdown-menu{
+      background-color: #342d70;
+    }
+
+    .dropdown-item{
+      color: white;
+    }
+
+    .dropdown-menu .dropdown-item:hover{
+      background-color: #342d70;
+      color: white;
+      text-shadow: 0rem 0rem 8rem black;
+      font-weight: bold;
+    }
+
+    .hr-dark{
+      border-top: 4px solid #2A4D69;
+      width: 90%;
+      margin-top: .8rem;
+      margin-bottom: 1.7rem;
+    }
+
+    /* background img */
+    .home-inner{
+        position: relative;
+        /* margin-top: 50px; */
+        background-image: url(images/nsscover.jpg);
+    }
+
+    .caption{
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 46%;
+      z-index: 1;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .caption h1{
+      font-size: 3.8rem;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+      text-shadow: 0.2rem 0.2rem 0.8rem black;
+      padding-bottom: 1rem;
+    }
+
+    .caption h3{
+      font-size: 2rem;
+      text-shadow: 0.1rem 0.1rem 0.5rem black;
+      padding-bottom: 1.1rem;
+    }
+
+    .btn-lg{
+      border-width: medium;
+      padding: 0.6rem 1.3rem;
+      font-size: 1.1rem;
+      text-shadow: 0.1rem 0.1rem 0.6rem black;
+      box-shadow: 0.2rem 0.2rem 0.8rem black;
+    }
+
+    .welcome{
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 2rem;
+      color: black;
+      left: 0;
+      right: 0;
+    }
+
+    /* community service */
+      .hr-break{
+          height: 12px;
+          border: 0;
+          /* box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); */
+          padding-bottom: 5rem;
+        }
+
+        .hr-underline{
+          border-top: 2px solid #2A4D69;
+          width: 65%;
+          margin-top: .8rem;
+          margin-bottom: 1rem;
+      }
+
+      .service-title{
+        width: 70%;
+        font-size: 2rem;
+        background-color: rgba(42, 77, 105, 1)!important;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        border: 1.5px solid #4b86b4;
+        border-radius:17px;
+        margin-bottom:1.4rem;
+        /* margin-left: 60px; */
+        /* margin-right: 60px; */
+        /* box-shadow: 5px 3px 2px grey; */
+        text-shadow: 0.1rem 0.1rem 0.3rem black;
+        padding: 1rem;
+      }
+
+      .service-content{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 1.25rem;
+      }
+    /* community service */
+
+    .trapezoid {
+      border-top: 50px solid blue;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 125px;
+
+    }
+
+    /* contact */
+    footer{
+      /* background-color: #424c66; */
+      /* background-color: #364c59; */
+      background-color: #007bff;
+      /* background-color: #002626!important;  */
+      /* #2A4D69 */
+      color: #d5d5d5;
+      padding-top: 2rem;
+    }
+
+    footer a{
+      color: #d5d5d5;
+    }
+
+    .contact-name{
+      font-size: 1.5rem;
+    }
+
+    .contact-number{
+      font-size: 1.2rem;
+    }
+
+    hr.light{
+      border-top: 2px solid #d8ab08;
+      width: 55%;
       margin-top: .8rem;
       margin-bottom: 1rem;
-   }
+    }
 
-   .service-title{
-     width: 70%;
-     font-size: 2rem;
-     background-color: rgba(42, 77, 105, 1)!important;
-     color: white;
-     font-family: 'Quicksand', sans-serif;
-     font-weight: 500;
-     border: 1.5px solid #4b86b4;
-     border-radius:17px;
-     margin-bottom:1.4rem;
-     /* margin-left: 60px; */
-     /* margin-right: 60px; */
-     /* box-shadow: 5px 3px 2px grey; */
-     text-shadow: 0.1rem 0.1rem 0.3rem black;
-     padding: 1rem;
-   }
+    hr.light-100{
+      border-top: 2px solid #d8ab08;
+      width: 100%;
+      margin-top: .8rem;
+      margin-bottom: 1rem;
+    }
 
-   .service-content{
-     font-family: 'Quicksand', sans-serif;
-     font-weight: 300;
-     font-size: 1.25rem;
-   }
-/* community service */
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
 
-.trapezoid {
-  border-top: 50px solid blue;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 125px;
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
 
-}
+    #footer { 
+                position: fixed; 
+                padding: 10px 10px 0px 10px; 
+                bottom: 0; 
+                width: 100%; 
+    }
 
+    /* Facebook */
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
 
+    /* Twitter */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
 
-/* contact */
-footer{
-  /* background-color: #424c66; */
-  /* background-color: #364c59; */
-  background-color: #007bff;
-  /* background-color: #002626!important;  */
-  /* #2A4D69 */
-  color: #d5d5d5;
-  padding-top: 2rem;
-}
-
-footer a{
-  color: #d5d5d5;
-}
-
-.contact-name{
-  font-size: 1.5rem;
-}
-
-.contact-number{
-  font-size: 1.2rem;
-}
-
-hr.light{
-  border-top: 2px solid #d8ab08;
-  width: 55%;
-  margin-top: .8rem;
-  margin-bottom: 1rem;
-}
-
-hr.light-100{
-  border-top: 2px solid #d8ab08;
-  width: 100%;
-  margin-top: .8rem;
-  margin-bottom: 1rem;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-#footer { 
-            position: fixed; 
-            padding: 10px 10px 0px 10px; 
-            bottom: 0; 
-            width: 100%; 
-            /* Height of the footer*/  
-           
+    /* contact */
+    .cover1{
+      margin-top: 65px;
+      background-image: url("images/Wallpaper1.png"); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      height: 900px;
+      width: auto; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
 
 
-/* Set a specific color for each brand */
+    }
 
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+    .bg1{
+      background-color: #ece5dd !important;
+    }
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-/* contact */
-.cover1{
-  margin-top: 65px;
-  background-image: url("images/Wallpaper1.png"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 900px;
-  width: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    @media only screen and (max-width: 767px) {
+      .what-nss-about p {
+          font-size: 13px;
+      }
+    }
 
 
-}
-
-.bg1{
-  background-color: #ece5dd !important;
-}
-
-@media only screen and (max-width: 767px)
-.what-nss-about p {
-    font-size: 13px;
-}
+    .line {        
+                /* Increase this as per requirement */ 
+                padding-bottom: 15px; 
+                border-bottom-style: solid ; 
+                border-bottom-width: 3.1px ; 
+                width: fit-content; 
+            } 
 
 
 
 
-.line { 
-              
-            /* Increase this as per requirement */ 
-            padding-bottom: 15px; 
-            border-bottom-style: solid ; 
-            border-bottom-width: 3.1px ; 
-            width: fit-content; 
-        } 
+    @mixin white-gradient {
+      background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-250px * 7))}
+    }
+
+    slide11 {
+      align-items: center;
+      background: #E3E3E3;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+    }
 
 
+    .slider {
+      background: white;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+      height: 100px;
+      margin: auto;
+      overflow:hidden;
+      position: relative;
+      width: 960px;
 
+      &::before,
+      &::after {
+        @include white-gradient;
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+      
+      &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
 
-@mixin white-gradient {
-  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-}
+      &::before {
+        left: 0;
+        top: 0;
+      }
+      
+      .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+      }
+      
+      .slide {
+        height: 100px;
+        width: 250px;
+      }
+    .carousel .item {
+      height: 300px;
+    }
 
-$animationSpeed: 40s;
+    .item img {
+        position: absolute;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+</style>
 
-// Animation
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7))}
-}
+<body style="background-color: #eaeaf0">
 
-
-// Styling
-
-slide11 {
-  align-items: center;
-  background: #E3E3E3;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-}
-
-
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
-  margin: auto;
-  overflow:hidden;
-  position: relative;
-  width: 960px;
-  
-  &::before,
-  &::after {
-    @include white-gradient;
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-  
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
-    left: 0;
-    top: 0;
-  }
-  
-  .slide-track {
-    animation: scroll $animationSpeed linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
-  
-  .slide {
-    height: 100px;
-    width: 250px;
-  }
-.carousel .item {
-  height: 300px;
-}
-
-.item img {
-    position: absolute;
-    object-fit:cover;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-}
-
-
-
-
-
-  </style>
-
-  <body style="background-color: #eaeaf0">
-
-   <div style="" class="header">
+  <div style="" class="header">
       <nav style="background-color:#342d70;" class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/logo1.png" width="50px" height="50px"><img style="padding-left: 25px" src="images/HEADER_LOGO.png" width="190px " height="auto"></a>
@@ -618,8 +549,6 @@ slide11 {
               <li class="nav-item active">
                 <a class="nav-link" href="noticenew.html">Notices</a>
               </li>
-              
-            
             </ul>
           </div>
         </div>
@@ -630,9 +559,6 @@ slide11 {
    <img src="images/Wallpaper1.jpg" class="img-fluid" style="width: 100%;height: auto;" alt="Responsive image">
   </div>
 
-
-
-
     <!-- about -->
     <div style="background-color: #eaeaf0">
     <div class="container-fluid">
@@ -640,8 +566,6 @@ slide11 {
         <div class="col-12">
         <h1  style="color: #342d70" class="aboutus">ABOUT US</h1> 
               <hr class="style-two"> 
-
-
         </div>
         <div class="col-12">
           <p class="lead what-nss-about">The National Service Scheme (NSS) has been enthusiastically conducting activities to help people from the past 50 years. It was launched on Gandhiji’s centenary year to continue his ideas of community service among the youth of our nation. NSS is a student association of the youth studying in university.
@@ -649,10 +573,7 @@ We National Service Scheme Unit of Fr. Conceicao Rodrigues College of Engineerin
                   <p class="lead-big"><q>NOT ME BUT YOU</q></p>
   <br>
 
-
-   
-
-                <!--principal desk-->
+    <!--principal desk-->
                   
    <h1  style="color: #342d70" class="aboutus">From The Principal's Desk</h1> 
               <hr class="style-two"> 
@@ -666,9 +587,6 @@ We National Service Scheme Unit of Fr. Conceicao Rodrigues College of Engineerin
     <h1 style="font-family: 'Quicksand', sans-serif;font-size: 2em;font-weight: 350;color: #342d70">
       Dr. Srija Unnikrishnan
     </h1>
-       
-
-
               <div class="col-12">
                 <p class="lead what-nss-about">
              <div > <i class="lead what-nss-about"> To work for the common good is the greatest creed</i> </div> 
@@ -680,21 +598,12 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
 
                 </p>
               </div>
-
-
-                <!-- end rincipal deks-->
-
-
-
-
-
-
-
+<!-- end principal deks-->
         </div>
       </div>
     </div>
   </div>
-    <!-- end about -->
+<!-- end about -->
 
 
 <div style="background-color: #342d70;color: white">
@@ -738,13 +647,9 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
       <img class="Image" src="Static/Mainpage/Main5.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
       </div>
-    </div>
-          
+    </div>     
           
   </div>
-
-
-
 
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -755,61 +660,7 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
     <span class="sr-only">Next</span>
   </a>
 </div>
-</div>
-
-
-
-
-<!--
-  
-<div  style="background-color: #eaeaf0; ">
- 
-<div  style="background-color:#eaeaf0 " id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
-
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-    <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-    <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
-    <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
-   
-  </ol>
-  
- 
- 
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="Image" src="Static/Mainpage/Main1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="Image" src="Static/Mainpage/Main2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="Image" src="Static/Mainpage/Main3.jpg" alt="Third slide">
-    </div>
-       <div class="carousel-item">
-      <img class="Image" src="Static/Mainpage/Main4.jpg" alt="Third slide">
-    </div>
-       <div class="carousel-item">
-      <img class="Image" src="Static/Mainpage/Main5.jpg" alt="Third slide">
-    </div>
-
-
-   
-       
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-
--->
+</div> 
 
 
 <div style="padding-top: 30px;padding-bottom: 30px">
@@ -946,7 +797,7 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
 <div style="padding-top: 40px background-color:#342d70 color:white" class="container-fluid">
   <div class="row">
     <div style="padding-top: 14px" class="col-lg-4 col-sm-12">
-   <center>   <a style="" href="#"><img src="images/logo1.png" width="150px" height="auto"#></a></center><br><br>
+   <center>   <a href="#"><img src="images/logo1.png" width="150px" height="auto"#></a></center><br><br>
       <center><h5 class="" style="padding-bottom: 10px; font-family: 'Quicksand', sans-serif; font-size: 2.1rem; font-weight: 450;">National Service Scheme</h5></center>
       <center>
         <a style="padding-left: 7px;" href="https://www.facebook.com/NssCrce/"><img src="Static/SVG/facebook.svg" height="32px"></a>
@@ -955,8 +806,6 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
         <a  style="padding-left: 7px;" href="https://www.youtube.com/channel/UCapmNAV8uTIv_W3tj8rdJSQ"><img src="Static/SVG/youtube.svg" height="32px"></a>
         <a  style="padding-left: 7px;" href="mailto:crce.nss@gmail.com"><img src="Static/SVG/gmail.svg" height="32px"></a>
         <a  style="padding-left: 7px;" href="https://www.linkedin.com/in/nss-crce-0a44951b0/"><img src="Static/SVG/linkedin.svg" height="32px"></a>
-
-
 
       </center>
     </div>
@@ -980,14 +829,7 @@ Best Wishes to our NSS CRCE chapter to continue their good work and motivate mor
 </div>
 </div>
 
-
-
-
-
-
        <h5 style="text-align: center;font-style: italic;color: #342d70;padding-bottom: 5px;padding-top: 5px";>Copyright © 2020 NSS-CRCE. All Rights Reserved. </h5>
-
-
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
